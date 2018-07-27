@@ -1,0 +1,142 @@
+#mypage {
+    padding-top: 15px;
+
+    .contact-id {
+        width: 90%;
+        margin: 0 auto;
+
+        input {
+            display: block;
+            box-sizing: border-box;
+            padding: 0 15px;
+            font-size: 1.5em;
+            letter-spacing: 5px;
+            border: 0;
+            background-color: rgba($header-color, .3);
+            border-bottom: solid 1px $accent-color;
+            height: $contact-id-size;
+            float: left;
+            transition: background-color ease .3s;
+            font-weight: 900;
+
+            &:focus {
+                background-color: rgba($header-color, .7);
+            }
+
+            &[type=search] {
+                width: calc(100% - #{$contact-id-size} - 2px);
+                line-height: $contact-id-size;
+            }
+            &[type=submit] {
+                font-size: 1.7em;
+                border-left: solid 2px $main-background;
+                width: $contact-id-size + 2px;
+
+                &:hover {
+                    background-color: rgba($header-color, .9);
+                }
+            }
+        }
+    }
+
+    #contact-error {
+        display: none;
+        width: 90%;
+        margin: 25px auto;
+    }
+
+    #contact-id-add {
+        margin-top: 25px;
+        input {
+            width: 100%;
+            float: none;
+        }
+        .contact-id-buttons {
+            display: flex;
+            justify-content: space-around;
+
+            div {
+                width: 28%;
+
+                &::after {
+                    left: 20%;
+                }
+            }
+        }
+    }
+
+    .title {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    #tracking-list-parent {
+        width: 90%;
+        margin: 0 auto;
+
+        #tracking-list {
+            border: solid 1px rgba($header-color, .8);
+
+            .row {
+                height: $base-height;
+                line-height: $base-height;
+                display: flex;
+                text-align: center;
+                border-bottom: 1px solid rgba($header-color, .5);
+
+                &:first-child {
+                    border-bottom: solid 2px rgba($header-color, .5);
+
+                    .delete{
+                        color: $main-text-color;
+
+                        &:hover {
+                            color: $main-text-color;
+                            background-color: transparent;
+                        }
+                    }
+                }
+
+                * {
+                    box-sizing: border-box;
+                    padding: 0 10px;
+
+                    &:nth-child(even) {
+                        background-color: rgba($header-color, .5);
+                    }
+                }
+
+                .platform {
+                    width: 13%;
+                }
+                .status {
+                    width: 15%;
+                }
+                .name {
+                    width: 40%;
+                    &:not(&:first-child) {
+                        text-align: left;
+                    }
+                }
+                .number {
+                    width: 22%;
+                }
+
+                .delete {
+                    width: 10%;
+                    color: $sub-accent-color;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    transition: all ease .3s;
+
+                    &:hover {
+                        color: white;
+                        background-color: $sub-accent-color;
+                    }
+                }
+            }
+        }
+    }
+}

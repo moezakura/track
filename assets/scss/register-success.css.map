@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,iBAAiB,CACb,UAAU,CAAE,IAAI,CAChB,UAAU,CAAE,MAAM",
+"sources": ["register-success.scss"],
+"names": [],
+"file": "register-success.css"
+}

@@ -1,0 +1,37 @@
+$main-background: rgb(236, 239, 241);
+$main-text-color: rgb(55, 71, 79);
+$accent-color: rgb(245, 124, 0);
+$accent-color-light: rgb(255, 243, 241);
+$sub-accent-color: rgb(211, 47, 47);
+$header-color: rgb(176, 190, 197);
+$base-height: 50px;
+$header-size: 75px;
+$contact-id-size: 70px;
+
+html, body {
+    background-color: $main-background;
+    color: $main-text-color;
+}
+
+* {
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+a {
+    color: $accent-color;
+}
+
+.both {
+    clear: both;
+}
+
+@import "basic-form";
+@import "common-parts";
+@import "header";
+
+@import "top";
+@import "login";
+@import "register-success";
+@import "mypage";
+
+@import "errors-page";

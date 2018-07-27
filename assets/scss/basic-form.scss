@@ -1,0 +1,58 @@
+.basic-form {
+    h1 {
+        text-align: center;
+    }
+
+    label {
+        overflow: hidden;
+        display: block;
+        height: $base-height + 0.5px;
+        line-height: $base-height;
+        width: 100%;
+        margin: 8px 0;
+        background-color: $accent-color-light;
+    }
+
+    input {
+        display: block;
+        -webkit-appearance: none;
+        width: 100%;
+        height: 100%;
+        border: solid 1px $accent-color;
+        padding: 0 8px;
+        box-sizing: border-box;
+        transition: border-color ease .3s;
+        background-color: transparent;
+        font-size: 18px;
+        margin: 0;
+
+        &[type=submit] {
+            transition: all ease .3s;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: $sub-accent-color;
+        }
+
+        &[type=submit]:hover {
+            color: white;
+            background-color: $sub-accent-color;
+            border-color: $sub-accent-color;
+        }
+    }
+
+    label::after {
+        position: relative;
+        display: block;
+        content: " ";
+        left: calc(100% - 50px);
+        top: 50px;
+        width: 50%;
+        height: 100%;
+        background-color: $accent-color;
+        transform: rotateZ(45deg);
+        transition: background-color ease .3s;
+        z-index: 0;
+    }
+}

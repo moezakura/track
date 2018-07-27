@@ -1,0 +1,12 @@
+#register-success {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+
+    p {
+        font-weight: 900;
+        font-size: 1.3em;
+    }
+}
